@@ -1,7 +1,7 @@
 {
    "siteMetadata":{
       "title":"Portfolio",
-      "description":"Hi, my name is Maxim! This is my personal page where you can find out more about who I am, what I do, and the projects I'm working on.",
+      "description":"Hi, my name is Pratik! This is my personal page where you can find out more about who I am, what I do, and the projects I'm working on.",
       "embeds":{
          "color":"#ce6419",
          "twitter_card":"summary_large_image",
@@ -34,20 +34,23 @@
          "move_speed":0.05
       }
    },
+   "resume_button": {
+      "enabled": true,
+      "label": "Download Resume",
+      "file": "/files/Pratik_Singh_Resume.pdf",
+      "route":"https://drive.google.com/file/d/1FNq74UXhpPwosUQZctOaIy7m1s5VkOMt/view?usp=sharing",
+      "style": "secondary"
+   },
    "footer":{
-      "text":"© 2025 Maxim - All rights reserved.",
+      "text":"© 2025 Pratik - All rights reserved.",
       "links":[
          {
             "label":"GitHub",
-            "url":"https://github.com/maximjsx/portfolio"
+            "url":"https://github.com/pratxk"
          },
          {
             "label":"Contact",
             "url":"/contact"
-         },
-         {
-            "label":"Privacy",
-            "url":"/privacy"
          }
       ]
    },
@@ -220,24 +223,18 @@
          "enabled":true,
          "route":"/home",
          "name": "Home",
-         "profile_image":"/images/avatar_2.png",
-         "about_me":"<gradient>Hi, I'm Maxim!</gradient>",
-         "description":"I’ve spent a lot of time messing around in the Spigot modding scene, mostly making plugins and libraries like [HologramLib](https://github.com/HologramLib/HologramLib)",
+         "profile_image":"/images/ProfilePic.jpeg",
+         "about_me":"<gradient>Hi, I'm Pratik!</gradient>",
+         "description":"A Result-Oriented Web Developer building and managing Websites and Web Applications that leads to the success of the overall product.",
          "tools_languages_title":"Tools & Languages",
          "languages":[
-            "Java",
             "JavaScript",
             "TypeScript",
+            "SQL",
             "Python"
          ],
          "tools":[
-            "Next.js",
-            "MongoDB",
-            "Intellij",
-            "MariaDB",
-            "Pycharm",
-            "FIX",
-            "Git"
+            "Next.js", "React.js", "Remix.js", "Tailwind CSS", "ShadCN", "Bootstrap", "PostgreSQL", "MongoDB", "Git", "GitHub", "Postman", "Docker (basic)", "Redis", "KeystoneJS", "Jest", "Cypress", "GitHub Actions"
          ],
          "action_buttons":[
             {
@@ -246,8 +243,10 @@
                "style":"primary"
             },
             {
-               "label":"Source Code",
-               "route":"https://github.com/maximjsx/portfolio",
+               "label":"Resume",
+               "action":true,
+               "file":"/files/Pratik_Singh_Resume.pdf",
+               "route":"https://drive.google.com/file/d/1FNq74UXhpPwosUQZctOaIy7m1s5VkOMt/view?usp=sharing",
                "style":"secondary"
             }
          ],
@@ -256,34 +255,37 @@
             "title":"My Experience",
             "list":[
                {
-                  "title":"Plugin Developer",
-                  "company":"Heldeninsel",
-                  "date":"2025 – Present",
-                  "description":"Building custom game modes using modern technologies for [SYou](https://www.youtube.com/@SYou).",
+                  "title":"Associate Software Engineer",
+                  "company":"CIMET",
+                  "date":"Nov 2024 – Present",
+                  "description":"Built high-performance, server-rendered interfaces using Next.js, TypeScript, and Styled Components, reducing load times by 40% and improving SEO across multiple verticals. Integrated GraphQL and REST APIs for efficient SSR data flows, cutting latency by 30%. Boosted backend performance by 65% using Redis caching and Prisma-PostgreSQL optimizations. Improved code quality and CI reliability by refactoring a monorepo and resolving 200+ SonarQube issues. Enabled flexible content publishing by extending KeystoneJS CMS with modular, SEO-ready schemas. Collaborated with cross-functional teams to deliver scalable, maintainable, and accessible UI/UX solutions.",  
                   "side":"right"
                },
                {
-                  "title":"Software Developer",
-                  "company":"[GitHub](https://github.com/maximjsx) / [SpigotMC](https://www.spigotmc.org/members/1620695/)",
-                  "date":"2021 – Present",
-                  "description":"Developed various tools, Discord bots, APIs, and Minecraft plugins that have accumulated over **50,000 downloads** across all platforms. My plugins have been featured by well-known YouTubers including [KasaiSora](https://www.youtube.com/@KasaiSora), [Ajneb97](https://www.youtube.com/@Ajneb97), and others.",
+                  "title":"Full Stack Developer Trainee",
+                  "company":"[CIMET](https://www.cimet.com.au/)",
+                  "date":"Sept 2024 – Nov 2024",
+                  "description":"Developed and maintained production-grade web applications using the MERN stack and TypeScript, following modular architecture and test-driven development. Built secure RESTful APIs with JWT authentication and role-based access control. Engineered responsive, accessible UIs in React, achieving consistently high Lighthouse scores (90+). Integrated Jest and Cypress test suites, reducing QA cycles by 35% and improving release stability.",
                   "side":"left"
                },
                {
-                  "title":"Backend Developer",
-                  "company":"[Uroria Network](https://www.youtube.com/@Uroria)",
-                  "date":"2024",
-                  "description":"Assisted the team by designing and maintaining backend systems.",
+                  "title":"Web Development & CyberSecurity Intern",
+                  "company":"[Codelancer CyberSecurity](https://codelancer.in/)",
+                  "date":"Sept 2024 - Dec 2024",
+                  "description":"Worked on various real-time projects related to website development and web application maintenance. Built a fully functional dashboard for managing finances and health insurance claims for Medcash Corporation. Developed a comprehensive Event Management System for hosting and managing onsite and virtual events. Performed Security Audits on various websites and firms and identified vulnerabilities.",
                   "side":"right"
-               },
-               {
-                  "title":"Minecraft Server Owner",
-                  "company":"[NextFight Network](https://maxim.cat/projects/nextfight)",
-                  "date":"2022 – 2024",
-                  "description":"Launched and managed a Minecraft server, developing infrastructure and custom game mode plugins. Collaborated with streamers such as copeat, Brostastic, and SimplyFuse. The server welcomed guests including GommeHD, Wichtiger, Fuxelbau, and even a Mojang employee.",
-                  "side":"left"
                }
             ]
+         },
+         "aboutMe":{
+            "enabled":true,
+            "title":"About Me",
+            "content":"I’m a Software Engineer with 9 months of hands-on experience designing, architecting, and deploying scalable, high-performance web applications. I specialize in building seamless user experiences using modern JavaScript frameworks like React.js and Next.js, and crafting robust backend solutions with Node.js, GraphQL, and Express. My backend expertise includes working with relational and NoSQL databases such as PostgreSQL and MongoDB, using tools like Prisma ORM to manage data efficiently. I’m proficient in TypeScript, Python, and SQL, and well-versed in RESTful and GraphQL API architectures. In addition to development, I’m experienced in setting up CI/CD workflows, writing automated tests with Jest and Cypress, and ensuring applications are production-ready through performance tuning, Lighthouse optimization, and secure deployment practices. I thrive in Agile environments, enjoy collaborating with cross-functional teams, and have a proven track record of improving code quality, accelerating feature delivery, and solving real-world user problems. I’m passionate about clean code, scalable architecture, and always learning the next best tool or technology."
+         },
+         "github_stats":{
+            "enabled":true,
+            "title":"GitHub Stats",
+            "username":"pratxk"
          }
       },
       "projects":{
@@ -297,32 +299,35 @@
          "name": "Contact",
          "header":"Socials",
          "route":"/contact",
-         "email":"forking@duck.com",
+         "email":"proff.pratiksingh@gmail.com",
          "direct_contact":"Reach Me Directly",
          "legal":{
             "enabled":true,
-            "name":"Maxim",
-            "address":"[REDACTED]",
-            "email":"legal@maxim.cat",
-            "phone":"[REDACTED]",
-            "tax_id":"Not Applicable",
-            "legal_disclaimer":"This is a personal portfolio website for demonstration purposes."
+            "name":"Pratik Singh",
+            "address":"Nagpur, Maharashtra, India",
+            "email":"proff.pratiksingh@gmail.com",
+            "phone":"+91 9356901030"
          },
          "social_links":[
             {
                "name":"GitHub",
-               "url":"https://github.com/maximjsx",
+               "url":"https://github.com/pratxk",
                "icon":"github"
             },
             {
-               "name":"TikTok",
-               "url":"https://tiktok.com/@maximde",
-               "icon":"tiktok"
+               "name":"LinkedIn",
+               "url":"https://linkedin.com/in/pratik-singh-0654b9214",
+               "icon":"linkedin"
             },
             {
-               "name":"YouTube",
-               "url":"https://www.youtube.com/@max1mde",
-               "icon":"youtube"
+               "name":"Twitter",
+               "url":"https://www.x.com/Pratxk007",
+               "icon":"twitter"
+            },
+            {
+               "name":"Instagram",
+               "url":"https://www.instagram.com/kakashiix26",
+               "icon":"instagram"
             }
          ],
          "contact_form":{
@@ -353,25 +358,25 @@
             ]
          }
       },
-      "tools":{
+      "Connect With Me":{
          "enabled":true,
          "dropdown":true,
          "items":[
             {
-               "name":"Embed Builder",
-               "route":"https://embed.maxim.cat"
+               "name":"LinkedIn",
+               "route":"https://linkedin.com/in/pratik-singh-0654b9214"
             },
             {
-               "name":"Invoice Generator",
-               "route":"https://invoice.maxim.cat"
+               "name":"Github",
+               "route":"https://github.com/pratxk"
             },
             {
-               "name":"Skin Overlays",
-               "route":"https://skins.maxim.cat"
+               "name":"Twitter",
+               "route":"https://x.com/Pratxk007"
             },
             {
-               "name":"Next.js Template",
-               "route":"https://template.maxim.cat"
+               "name":"Peerlist",
+               "route":"https://peerlist.io/pratxk007"
             }
          ]
       },
@@ -440,153 +445,79 @@
    },
    "cards":[
       {
-         "title":"Portfolio (This website)",
-         "description":"Customizable, responsive, portfolio website built with Next.js",
-         "imageSRC":"/images/projects/portfolio.webp",
+         "title":"AI Shorts Generator",
+         "description":"A web app that generates AI Shorts from by generating own stories and images and then converting them into videos",
+         "imageSRC":"/images/projects/aishortsapp.png",
          "buttonText":"View on GitHub",
-         "buttonURL":"https://github.com/maximjsx/portfolio",
+         "buttonURL":"https://github.com/pratxk/Ai-Shorts-App",
          "badges":[
             
          ]
       },
       {
-         "title":"Fancy Physics",
-         "description":"Tree fall animation, hit particles, realistic explosions, 3D particles & more",
-         "imageSRC":"/images/projects/fancyphysics.webp",
-         "buttonText":"View on SpigotMC",
-         "buttonURL":"https://www.spigotmc.org/resources/110500/",
+         "title":"Lenskart Clone",
+         "description":"A fully functional Lenskart clone with a modern UI, built with Next.js, Tailwind CSS, and Prisma.",
+         "imageSRC":"/images/projects/lenskart.webp",
+         "buttonText":"View on Github",
+         "buttonURL":"https://github.com/pratxk/Lenskart-Clone/",
          "badges":[
-            "https://img.shields.io/spiget/downloads/110500?label=Downloads"
+
          ]
       },
       {
-         "title":"Better Chat Bubbles",
-         "description":"Packet based chat bubbles above players head, with an extensive API",
-         "imageSRC":"/images/projects/betterchatbubbles.webp",
-         "buttonText":"Buy on SpigotMC",
-         "buttonURL":"https://www.spigotmc.org/resources/115811/",
+         "title":"Harris AI",
+         "description":"An advanced virtual assistant featuring a smart chatbot using Google & Wikipedia APIs, with voice command controls for managing applications & tasks.",
+         "imageSRC":"/images/projects/harris.png",
+         "buttonText":"View on Github",
+         "buttonURL":"https://github.com/pratxk/HARRIS",
          "badges":[
-            "https://img.shields.io/spiget/downloads/115811?label=Sales"
+
          ]
       },
       {
-         "title":"HologramLib",
-         "description":"Packet based text display hologram library with minimessage and emoji support",
-         "imageSRC":"/images/projects/hologramapi.webp",
-         "buttonText":"Learn More",
-         "buttonURL":"/projects/hologramlib",
+         "title":"PharmEasy",
+         "description":"A full fledged e-commerce & inventory managed website for medicines and healthcare products, built with React, Tailwind CSS, and Prisma.",
+         "imageSRC":"/images/projects/pharmeasy.png",
+         "buttonText":"View on Vercel",
+         "buttonURL":"https://pharm-easyy.vercel.app/",
          "badges":[
-            "https://img.shields.io/github/stars/maximjsx/HologramLib.svg?style=flat&label=Stars"
          ]
       },
       {
-         "title":"Fancy Readme Stats",
-         "description":"Animated Readme Cards - For your GitHub profile or repository readme",
-         "imageSRC":"/images/projects/readmestats.webp",
+         "title":"Movix",
+         "description":"A web app that allows users to search and watch movies, TV shows, and anime with a modern UI, built with React.js, Tailwind CSS, and Prisma.",
+         "imageSRC":"/images/projects/movix.png",
+         "buttonText":"View on Vercel",
+         "buttonURL":"https://movix-app-pink-gamma.vercel.app/",
+         "badges":[
+            
+         ]
+      },
+      {
+         "title":"Dell Clone",
+         "description":"A fully functional Dell clone with a modern UI, built with Next.js, Tailwind CSS, and Prisma.",
+         "imageSRC":"/images/projects/dellClone.png",
+         "buttonText":"View on Vercel",
+         "buttonURL":"https://dell-clone-hakai.vercel.app/",
+         "badges":[
+         ]
+      },
+      {
+         "title":"SuperHero Resume",
+         "description":"A superhero-themed resume template built with React.js and Tailwind CSS, showcasing a unique design.",
+         "imageSRC":"/images/projects/luffy.png",
+         "buttonText":"View on Netlify",
+         "buttonURL":"https://cheerful-douhua-aba1b0.netlify.app/",
+         "badges":[
+         ]
+      },
+      {
+         "title":"Kanban App",
+         "description":"A Kanban app built with React.js, Tailwind CSS, and Prisma, allowing users to create and manage tasks in a Kanban board format.",
+         "imageSRC":"/images/projects/kanban.webp",
          "buttonText":"View on GitHub",
-         "buttonURL":"https://github.com/maximjsx/fancy-readme-stats",
+         "buttonURL":"https://github.com/pratxk/Kanban_app",
          "badges":[
-            "https://img.shields.io/github/stars/maximjsx/fancy-readme-stats.svg?style=flat&label=Stars"
-         ]
-      },
-      {
-         "title":"Nextfight",
-         "description":"Nextfight is a Minecraft minigame network focused on a Battle Royale like gamemode",
-         "imageSRC":"/images/projects/nextfight.webp",
-         "buttonText":"Learn More",
-         "buttonURL":"/projects/nextfight",
-         "badges":[
-            "https://dcbadge.limes.pink/api/server/https://discord.gg/sB4nh3eHGB?style=flat"
-         ]
-      },
-      {
-         "title":"EntitySize",
-         "description":"Change the size/scale of any living entity or player with an optional transition!",
-         "imageSRC":"/images/projects/entitysize.webp",
-         "buttonText":"View on SpigotMC",
-         "buttonURL":"https://www.spigotmc.org/resources/116497/",
-         "badges":[
-            "https://img.shields.io/spiget/downloads/116497?label=Downloads"
-         ]
-      },
-      {
-         "title":"Discord Embed Builder",
-         "description":"A Discord embed builder for users. No bot, webhook, mod or selfbot required!",
-         "imageSRC":"/images/projects/embedbuilder.webp",
-         "buttonText":"View on GitHub",
-         "buttonURL":"https://github.com/maximjsx/discord-embed-builder",
-         "badges":[
-            "https://img.shields.io/github/stars/maximjsx/discord-embed-builder.svg?style=flat&label=Stars"
-         ]
-      },
-      {
-         "title":"MaximClient",
-         "description":"MaximClient was a 1.8 PVP client with many mods and free online cosmetics",
-         "imageSRC":"/images/projects/maximclient.webp",
-         "buttonText":"Join the Discord",
-         "buttonURL":"https://discord.gg/eCn8VWEGbZ",
-         "badges":[
-            "https://dcbadge.limes.pink/api/server/https://discord.gg/eCn8VWEGbZ?style=flat"
-         ]
-      },
-      {
-         "title":"FIX",
-         "description":"A Windows tool for AI text correction and translation with hotkeys & voice control",
-         "imageSRC":"/images/projects/fix.webp",
-         "buttonText":"View on GitHub",
-         "buttonURL":"https://github.com/maximjsx/FIX",
-         "badges":[
-            "https://img.shields.io/github/stars/maximjsx/FIX.svg?style=flat&label=Stars"
-         ]
-      },
-      {
-         "title":"World Border Bypass",
-         "description":"Bypass the vanilla worldborder building & combat limitations",
-         "imageSRC":"/images/projects/border.webp",
-         "buttonText":"View on GitHub",
-         "buttonURL":"https://github.com/maximjsx/BeyondBorderUnlocked",
-         "badges":[
-            "https://img.shields.io/github/stars/maximjsx/BeyondBorderUnlocked.svg?style=flat&label=Stars"
-         ]
-      },
-      {
-         "title":"Next.js Template",
-         "description":"A powerful Next.js template combining the best UI component libraries",
-         "imageSRC":"/images/projects/template.webp",
-         "buttonText":"View on GitHub",
-         "buttonURL":"https://github.com/maximjsx/template",
-         "badges":[
-            "https://img.shields.io/github/stars/maximjsx/template.svg?style=flat&label=Stars"
-         ]
-      },
-      {
-         "title":"PassengerAPI",
-         "description":"Fix passenger compatibility issues | Manage your own entity passengers",
-         "imageSRC":"/images/projects/entitysize.webp",
-         "buttonText":"View on SpigotMC",
-         "buttonURL":"https://www.spigotmc.org/resources/117017/",
-         "badges":[
-            "https://img.shields.io/spiget/downloads/117017?label=Downloads"
-         ]
-      },
-      {
-         "title":"Custom Score Numbers",
-         "description":"Remove/hide the red numbers in the scoreboard or change the color",
-         "imageSRC":"/images/projects/scorenumbers.webp",
-         "buttonText":"View on SpigotMC",
-         "buttonURL":"https://www.spigotmc.org/resources/115955/",
-         "badges":[
-            "https://img.shields.io/spiget/downloads/115955?label=Downloads"
-         ]
-      },
-      {
-         "title":"Skin Overlay Generator",
-         "description":"Festive overlays for your Minecraft skin",
-         "imageSRC":"/images/projects/skinoverlay.webp",
-         "buttonText":"View on GitHub",
-         "buttonURL":"https://github.com/ToiletDevelopment/Skin-Overlay-Generator",
-         "badges":[
-            "https://img.shields.io/github/stars/ToiletDevelopment/Skin-Overlay-Generator.svg?style=flat&label=Stars"
          ]
       }
    ]

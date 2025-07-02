@@ -36,7 +36,7 @@ export default function ProfileSection() {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-            className="relative aspect-[5/7] w-32 md:w-60"
+            className="relative aspect-[1/1] w-32 md:w-60 overflow-hidden rounded-full"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent overflow-hidden">
               <Image

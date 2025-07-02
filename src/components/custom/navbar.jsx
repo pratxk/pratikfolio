@@ -15,6 +15,7 @@ import { usePathname } from "next/navigation";
 import config from "/CONFIG.json";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
+import Button from "./button";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,6 +64,15 @@ export default function Navbar() {
 
   const handleDropdownMouseLeave = () => {
     setOpenDropdown(null);
+  };
+
+  const handleResumeDownload = (filePath) => {
+    const link = document.createElement("a");
+    link.href = filePath;
+    link.download = filePath.split("/").pop();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const getCustomNavbarPages = () => {
@@ -368,7 +378,10 @@ export default function Navbar() {
                       <li key={pageName} className="w-60">
                         {renderLink(
                           pageConfig.route,
-                          pageConfig.name ? pageConfig.name : pageName.charAt(0).toUpperCase() + pageName.slice(1),
+                          pageConfig.name
+                            ? pageConfig.name
+                            : pageName.charAt(0).toUpperCase() +
+                                pageName.slice(1),
                           cn(
                             "c-cursor-pointer flex items-center justify-center px-4 py-2 rounded-md border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300",
                             "text-white font-medium text-center w-60 mb-2 text-lg",
@@ -383,6 +396,24 @@ export default function Navbar() {
             </div>
           )}
         </div>
+
+        {config.resume_button?.enabled && (
+          <div className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2">
+            <Button
+              as="button"
+              href={config.resume_button.route}
+              onClick={() => handleResumeDownload(config.resume_button.file)}
+              variant={
+                config.resume_button.style === "primary"
+                  ? "primary"
+                  : "secondary"
+              }
+              className="font-medium px-4 py-2 md:text-lg md:px-5 md:py-2.5 xl:px-6 xl:py-3"
+            >
+              {config.resume_button.label}
+            </Button>
+          </div>
+        )}
       </div>
     </nav>
   );
