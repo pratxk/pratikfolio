@@ -280,7 +280,7 @@
          "aboutMe":{
             "enabled":true,
             "title":"About Me",
-            "content":"I’m a Software Engineer with 9 months of hands-on experience designing, architecting, and deploying scalable, high-performance web applications. I specialize in building seamless user experiences using modern JavaScript frameworks like React.js and Next.js, and crafting robust backend solutions with Node.js, GraphQL, and Express. My backend expertise includes working with relational and NoSQL databases such as PostgreSQL and MongoDB, using tools like Prisma ORM to manage data efficiently. I’m proficient in TypeScript, Python, and SQL, and well-versed in RESTful and GraphQL API architectures. In addition to development, I’m experienced in setting up CI/CD workflows, writing automated tests with Jest and Cypress, and ensuring applications are production-ready through performance tuning, Lighthouse optimization, and secure deployment practices. I thrive in Agile environments, enjoy collaborating with cross-functional teams, and have a proven track record of improving code quality, accelerating feature delivery, and solving real-world user problems. I’m passionate about clean code, scalable architecture, and always learning the next best tool or technology."
+            "content":"I’m a Software Engineer with 1.5 years of hands-on experience designing, architecting, and deploying scalable, high-performance web applications. I specialize in building seamless user experiences using modern JavaScript frameworks like React.js and Next.js, and crafting robust backend solutions with Node.js, GraphQL, and Express. My backend expertise includes working with relational and NoSQL databases such as PostgreSQL and MongoDB, using tools like Prisma ORM to manage data efficiently. I’m proficient in TypeScript, Python, and SQL, and well-versed in RESTful and GraphQL API architectures. In addition to development, I’m experienced in setting up CI/CD workflows, writing automated tests with Jest and Cypress, and ensuring applications are production-ready through performance tuning, Lighthouse optimization, and secure deployment practices. I thrive in Agile environments, enjoy collaborating with cross-functional teams, and have a proven track record of improving code quality, accelerating feature delivery, and solving real-world user problems. I’m passionate about clean code, scalable architecture, and always learning the next best tool or technology."
          },
          "github_stats":{
             "enabled":true,
@@ -455,6 +455,16 @@
          ]
       },
       {
+         "title":"ChatBot Flow Builder",
+         "description":"A web app that allows users to create and manage chatbots with a visual flow builder, built with React.js, Tailwind CSS, and vite.",
+         "imageSRC":"/images/projects/chatbotflow.png",
+         "buttonText":"View on GitHub Pages",
+         "buttonURL":"https://pratxk.github.io/Chatbot-FlowBuilder/",
+         "badges":[
+            
+         ]
+      },
+      {
          "title":"Lenskart Clone",
          "description":"A fully functional Lenskart clone with a modern UI, built with Next.js, Tailwind CSS, and Prisma.",
          "imageSRC":"/images/projects/lenskart.webp",
@@ -508,6 +518,15 @@
          "imageSRC":"/images/projects/luffy.png",
          "buttonText":"View on Netlify",
          "buttonURL":"https://cheerful-douhua-aba1b0.netlify.app/",
+         "badges":[
+         ]
+      },
+      {
+         "title":"Pokemon Dictionary",
+         "description":"A simple web app that allows users to search and view information about Pokemon, built with vanilla JavaScript, HTML, and CSS.",
+         "imageSRC":"/images/projects/Pokemon.png",
+         "buttonText":"View on GitHub Pages",
+         "buttonURL":"https://pratxk.github.io/Pokemon-Task/",
          "badges":[
          ]
       },
