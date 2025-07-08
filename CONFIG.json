@@ -445,6 +445,16 @@
    },
    "cards":[
       {
+         "title":"RedWing",
+         "description":"A full-stack drone management system built with Next.js, Node.js, Apollo GraphQL and Redis for real-time data handling and robust backend.",
+         "imageSRC":"/images/projects/redwing.png",
+         "buttonText":"View on Vercel",
+         "buttonURL":"https://redwinghq.vercel.app/",
+         "badges":[
+            
+         ]
+      },
+      {
          "title":"AI Shorts Generator",
          "description":"A web app that generates AI Shorts from by generating own stories and images and then converting them into videos",
          "imageSRC":"/images/projects/aishortsapp.png",
