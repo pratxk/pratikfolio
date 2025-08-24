@@ -497,7 +497,7 @@
       {
          "title":"Lenskart Clone",
          "description":"A fully functional Lenskart clone with a modern UI, built with Next.js, Tailwind CSS, and Prisma.",
-         "imageSRC":"/images/projects/lenskart.webp",
+         "imageSRC":"/images/projects/lenskart.png",
          "buttonText":"View on Netlify",
          "buttonURL":"https://extraordinary-paprenjak-f2792f.netlify.app/",
          "badges":[
