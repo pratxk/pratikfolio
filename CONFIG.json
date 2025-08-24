@@ -38,7 +38,7 @@
       "enabled": true,
       "label": "Download Resume",
       "file": "/files/Pratik_Singh_Resume.pdf",
-      "route":"https://drive.google.com/file/d/1FNq74UXhpPwosUQZctOaIy7m1s5VkOMt/view?usp=sharing",
+      "route":"https://drive.google.com/file/d/1yrzU_5YBf3VUaF5Xdc8bn4eRoaRD9E3z/view?usp=sharing",
       "style": "secondary"
    },
    "footer":{
@@ -246,7 +246,7 @@
                "label":"Resume",
                "action":true,
                "file":"/files/Pratik_Singh_Resume.pdf",
-               "route":"https://drive.google.com/file/d/1FNq74UXhpPwosUQZctOaIy7m1s5VkOMt/view?usp=sharing",
+               "route":"https://drive.google.com/file/d/1yrzU_5YBf3VUaF5Xdc8bn4eRoaRD9E3z/view?usp=sharing",
                "style":"secondary"
             }
          ],
