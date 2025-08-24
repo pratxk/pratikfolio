@@ -455,6 +455,16 @@
          ]
       },
       {
+         "title":"ODM Gear",
+         "description":"A full-stack order management system built with Next.js, Node.js, Restful APIs for real-time order handling and robust backend.",
+         "imageSRC":"/images/projects/odm.png",
+         "buttonText":"View on Vercel",
+         "buttonURL":"https://order-management-system-chi.vercel.app/",
+         "badges":[
+            
+         ]
+      },
+      {
          "title":"Categorizer HQ",
          "description":"A Product management system built with Next.js, Tailwind CSS, ShadCN UI.",
          "imageSRC":"/images/projects/categorizer.png",
