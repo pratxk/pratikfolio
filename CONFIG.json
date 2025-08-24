@@ -455,6 +455,26 @@
          ]
       },
       {
+         "title":"Categorizer HQ",
+         "description":"A Product management system built with Next.js, Tailwind CSS, ShadCN UI.",
+         "imageSRC":"/images/projects/categorizer.png",
+         "buttonText":"View on Vercel",
+         "buttonURL":"https://categorizerhq.vercel.app/",
+         "badges":[
+            
+         ]
+      },
+      {
+         "title":"Dynamic Form Builder",
+         "description":"A dynamic form builder system built with Next.js, Tailwind CSS, ShadCN UI.",
+         "imageSRC":"/images/projects/formBuilder.png",
+         "buttonText":"View on Vercel",
+         "buttonURL":"https://react-form-builder-beryl.vercel.app/",
+         "badges":[
+            
+         ]
+      },
+      {
          "title":"AI Shorts Generator",
          "description":"A web app that generates AI Shorts from by generating own stories and images and then converting them into videos",
          "imageSRC":"/images/projects/aishortsapp.png",
