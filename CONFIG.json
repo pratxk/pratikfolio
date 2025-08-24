@@ -257,21 +257,21 @@
                {
                   "title":"Associate Software Engineer",
                   "company":"CIMET",
-                  "date":"Nov 2024 – Present",
+                  "date":"Sept 2024 – Jul 2025",
                   "description":"Built high-performance, server-rendered interfaces using Next.js, TypeScript, and Styled Components, reducing load times by 40% and improving SEO across multiple verticals. Integrated GraphQL and REST APIs for efficient SSR data flows, cutting latency by 30%. Boosted backend performance by 65% using Redis caching and Prisma-PostgreSQL optimizations. Improved code quality and CI reliability by refactoring a monorepo and resolving 200+ SonarQube issues. Enabled flexible content publishing by extending KeystoneJS CMS with modular, SEO-ready schemas. Collaborated with cross-functional teams to deliver scalable, maintainable, and accessible UI/UX solutions.",  
                   "side":"right"
                },
                {
                   "title":"Full Stack Developer Trainee",
-                  "company":"[CIMET](https://www.cimet.com.au/)",
-                  "date":"Sept 2024 – Nov 2024",
+                  "company":"[MASAI](https://www.masaischool.com/)",
+                  "date":"Jan 2024 - Aug 2024",
                   "description":"Developed and maintained production-grade web applications using the MERN stack and TypeScript, following modular architecture and test-driven development. Built secure RESTful APIs with JWT authentication and role-based access control. Engineered responsive, accessible UIs in React, achieving consistently high Lighthouse scores (90+). Integrated Jest and Cypress test suites, reducing QA cycles by 35% and improving release stability.",
                   "side":"left"
                },
                {
-                  "title":"Web Development & CyberSecurity Intern",
+                  "title":"Web Developer",
                   "company":"[Codelancer CyberSecurity](https://codelancer.in/)",
-                  "date":"Sept 2024 - Dec 2024",
+                  "date":"Aug 2023 - Dec 2023",
                   "description":"Worked on various real-time projects related to website development and web application maintenance. Built a fully functional dashboard for managing finances and health insurance claims for Medcash Corporation. Developed a comprehensive Event Management System for hosting and managing onsite and virtual events. Performed Security Audits on various websites and firms and identified vulnerabilities.",
                   "side":"right"
                }
