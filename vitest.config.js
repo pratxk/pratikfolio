@@ -5,7 +5,9 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   test: {
-    environment: "jsdom",
+    // Backend tests (mongo, jose, route handlers) run in node; React tests
+    // opt into jsdom per-file via `// @vitest-environment jsdom`.
+    environment: "node",
     globals: true,
     setupFiles: ["./test/setup.js"],
     testTimeout: 20000, // mongodb-memory-server first-run download
