@@ -7,12 +7,15 @@
  * by the Free Software Foundation.
  */
 
+"use client";
+
 import Button from "./button";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 import { motion } from "framer-motion";
 
 
 export default function ActionButtons() {
+  const config = useConfig();
   const homeConfig = config.pages.home;
 
   if (!homeConfig.action_buttons) return null;

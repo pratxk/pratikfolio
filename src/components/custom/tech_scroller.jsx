@@ -7,10 +7,13 @@
  * by the Free Software Foundation.
  */
 
-import config from "/CONFIG.json";
+"use client";
+
+import { useConfig } from "@/context/config-context.jsx";
 import Scroller from "@/components/custom/scroller";
 
 export default function TechScroller() {
+  const config = useConfig();
   const homeConfig = config.pages.home;
 
   return (

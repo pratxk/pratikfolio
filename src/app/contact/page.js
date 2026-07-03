@@ -9,7 +9,7 @@
 
 "use client";
 
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 import { FaEnvelope } from "react-icons/fa";
 import { SocialLinks } from "@/components/custom/social_links";
 import { ContactForm } from "@/components/custom/contact_form";
@@ -17,6 +17,7 @@ import { LegalInfo } from "@/components/custom/legal_info";
 import { TextAnimate } from "@/components/magicui/text-animate";
 
 export default function Contact() {
+  const config = useConfig();
   const contactConfig = config.pages.contact;
 
   const handleContactSubmit = async (formData) => {

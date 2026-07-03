@@ -11,7 +11,7 @@
 
 import { useEffect } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 import ProfileSection from "@/components/custom/profile_section";
 import TechScroller from "@/components/custom/tech_scroller";
 import Timeline from "@/components/custom/timeline";
@@ -31,6 +31,7 @@ function useExternalScript(src) {
 }
 
 export default function Home() {
+  const config = useConfig();
   const {
     experience: { enabled: experienceEnabled },
     aboutMe:{ enabled: aboutMeEnabled },

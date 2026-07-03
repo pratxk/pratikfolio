@@ -10,12 +10,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 import { useRef, useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { parseText } from "@/lib/parse_links";
 
 const TimelineItem = ({ experience, animationDelay, isInView }) => {
+  const config = useConfig();
   const [isMobile, setIsMobile] = useState(false);
   const isLeft = experience.side === "left";
 
@@ -128,7 +129,7 @@ const TimelineItem = ({ experience, animationDelay, isInView }) => {
                 marginBottom: "0.5rem",
               }}
             >
-              {parseText(experience.company)}
+              {parseText(experience.company, config.global.gradient)}
             </h4>
             <h3
               className="c-cursor-text g"
@@ -139,7 +140,7 @@ const TimelineItem = ({ experience, animationDelay, isInView }) => {
                 color: "white",
               }}
             >
-              {parseText(experience.title)}
+              {parseText(experience.title, config.global.gradient)}
             </h3>
             <p
               className="c-cursor-text"
@@ -148,7 +149,7 @@ const TimelineItem = ({ experience, animationDelay, isInView }) => {
                 lineHeight: "1.625",
               }}
             >
-              {parseText(experience.description)}
+              {parseText(experience.description, config.global.gradient)}
             </p>
           </div>
         </div>
@@ -182,6 +183,7 @@ const TimelineItem = ({ experience, animationDelay, isInView }) => {
 };
 
 const Timeline = () => {
+  const config = useConfig();
   const [isInView, setIsInView] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const ref = useRef(null);

@@ -10,9 +10,10 @@
 "use client";
 
 import { useEffect } from "react";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 
 export default function ThemeProvider({ children }) {
+  const config = useConfig();
   useEffect(() => {
     const colors = config.global.colors || {};
 

@@ -10,9 +10,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 
 const AboutMeCard = ({ delay = 0 }) => {
+  const config = useConfig();
   const { aboutMe } = config.pages.home;
 
   if (!aboutMe?.enabled) return null;

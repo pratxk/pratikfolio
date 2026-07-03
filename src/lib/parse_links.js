@@ -8,10 +8,9 @@
  */
 
 import { LinkPreview } from "@/components/ui/link-preview";
-import config from "/CONFIG.json";
 
-export function parseText(text) {
-  const defaultGradient = config?.global?.gradient || "#a27aff:#ff73d7";
+export function parseText(text, gradient = "#a27aff:#ff73d7") {
+  const defaultGradient = gradient || "#a27aff:#ff73d7";
   const gradientColors = defaultGradient.split(":");
 
   const createGradientStyle = (colors) => ({

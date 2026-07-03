@@ -8,10 +8,11 @@
  */
 
 import { notFound } from "next/navigation";
-import config from "/CONFIG.json";
+import { getConfig } from "@/lib/config-service.js";
 import CustomPageLayout from "@/components/custom/custom_page_layout";
 
 export async function generateStaticParams() {
+  const config = await getConfig();
   const customPages = config.pages.custom || {};
   const params = [];
 
@@ -28,6 +29,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
+  const config = await getConfig();
   const { slug } = await params;
   const route = `/${slug.join("/")}`;
 
@@ -52,6 +54,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function CustomPage({ params }) {
+  const config = await getConfig();
   const { slug } = await params;
   const route = `/${slug.join("/")}`;
 
