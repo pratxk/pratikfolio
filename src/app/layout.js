@@ -1,25 +1,14 @@
 /**
  * Portfolio
  * Copyright (C) 2025 Maxim (https://github.com/maximjsx/portfolio)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as published
- * by the Free Software Foundation.
+ * Modifications Copyright (C) 2026 Pratik Singh — AGPL-3.0.
  */
 import localFont from "next/font/local";
-import Navbar from "@/components/custom/navbar";
 import "@/app/styles/globals.css";
 import "@/app/styles/card.css";
 import "@/app/styles/blurred-img.css";
 import { getConfig } from "@/lib/config-service.js";
 import { ConfigProvider } from "@/context/config-context.jsx";
-import Script from "next/script";
-
-import CustomCursor from "@/components/custom/cursor";
-import Footer from "@/components/custom/footer";
-import Background from "@/components/custom/background";
-import { Spotlight } from "@/components/ui/spotlight-new";
-import ThemeProvider from "@/components/custom/theme_provider";
 
 const deliusFont = localFont({
   src: "./fonts/DeliusSwashCaps-Regular.ttf",
@@ -83,20 +72,7 @@ export default async function RootLayout({ children }) {
       <body
         className={`${selectedFont.variable} min-h-screen antialiased flex flex-col overflow-x-hidden`}
       >
-        <link rel="preconnect" href="https://img.shields.io"></link>
-        <ConfigProvider value={config}>
-          <Background />
-        <div className="h-[60rem] w-full absolute overflow-hidden z-[-1] top-0 left-0 right-0 mt-0 pointer-events-none">
-          <Spotlight />
-        </div>
-        {config.global.custom_cursor.enabled && <CustomCursor />}
-        <Navbar />
-        <main className="flex-1">
-          <ThemeProvider>{children}</ThemeProvider>
-        </main>
-          <Footer config={config} />
-        </ConfigProvider>
-        <Script src="scripts/hover.js" strategy="afterInteractive" />
+        <ConfigProvider value={config}>{children}</ConfigProvider>
       </body>
     </html>
   );
