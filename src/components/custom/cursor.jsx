@@ -10,9 +10,10 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 
 const CustomCursor = () => {
+  const config = useConfig();
   const [cursorType, setCursorType] = useState("default");
   const [isClicking, setIsClicking] = useState(false);
   const [cursorSize, setCursorSize] = useState(10);

@@ -10,10 +10,11 @@
 "use client";
 
 import Image from "next/image";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 import { useEffect, useState } from "react";
 
 export default function Background() {
+  const config = useConfig();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
   const [scrollY, setScrollY] = useState(0);

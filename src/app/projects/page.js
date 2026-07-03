@@ -11,10 +11,11 @@
 
 import { Card } from "@/components/custom/card/card";
 import { useState, useEffect, useMemo } from "react";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 import { TextAnimate } from "@/components/magicui/text-animate";
 
 export default function Projects() {
+  const config = useConfig();
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {

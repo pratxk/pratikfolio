@@ -9,9 +9,10 @@
 
 "use client";
 
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 
 export default function Privacy() {
+  const config = useConfig();
   const privacy = config.pages.privacy;
 
   return (

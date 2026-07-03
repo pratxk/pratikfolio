@@ -12,12 +12,13 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 import ActionButtons from "./action_buttons";
 import { parseText } from "@/lib/parse_links";
 
 
 export default function ProfileSection() {
+  const config = useConfig();
   const {
     about_me,
     description,

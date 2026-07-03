@@ -10,7 +10,7 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 import { usePathname } from "next/navigation";
 
 export const Spotlight = ({
@@ -24,6 +24,7 @@ export const Spotlight = ({
   duration = 7,
   xOffset = 100,
 } = {}) => {
+  const config = useConfig();
   const pathname = usePathname();
   const homeRoute = config.global.home_route || "/home";
 

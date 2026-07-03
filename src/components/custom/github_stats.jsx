@@ -10,7 +10,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import config from "/CONFIG.json";
+import { useConfig } from "@/context/config-context.jsx";
 import { useRef, useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import GitHubCalendar from "react-github-calendar";
@@ -36,6 +36,7 @@ const StatCard = ({ title, children, delay = 0 }) => {
 };
 
 const GitHubStats = () => {
+  const config = useConfig();
   const [isInView, setIsInView] = useState(false);
   const ref = useRef(null);
   const { github_stats } = config.pages.home;

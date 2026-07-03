@@ -14,6 +14,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { parseText } from "@/lib/parse_links";
+import { useConfig } from "@/context/config-context.jsx";
 import {
   X,
   Download,
@@ -121,6 +122,7 @@ const statisticVariants = {
 };
 
 export default function CustomPageLayout({ page }) {
+  const config = useConfig();
   const {
     title,
     description,
@@ -311,7 +313,7 @@ export default function CustomPageLayout({ page }) {
             className="c-cursor-text prose prose-lg prose-invert max-w-none"
           >
             <p className="text-muted-foreground leading-relaxed">
-              {parseText(contentItem.content)}
+              {parseText(contentItem.content, config.global.gradient)}
             </p>
           </motion.div>
         );
@@ -399,7 +401,7 @@ export default function CustomPageLayout({ page }) {
               {title}
             </TextAnimate>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              {parseText(description)}
+              {parseText(description, config.global.gradient)}
             </p>
           </motion.div>
 
