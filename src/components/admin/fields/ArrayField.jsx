@@ -53,6 +53,7 @@ export default function ArrayField({
   onChange,
   onReorder,
   newItem,
+  addLabel = "Add",
 }) {
   const sensors = useSensors(useSensor(PointerSensor));
   const ids = items.map((_, i) => String(i));
@@ -105,7 +106,7 @@ export default function ArrayField({
         onClick={() => onChange([...items, newItem()])}
         className="self-start rounded-md border border-white/20 px-3 py-1.5 text-sm text-white/80 hover:bg-white/10"
       >
-        Add
+        {addLabel}
       </button>
     </div>
   );

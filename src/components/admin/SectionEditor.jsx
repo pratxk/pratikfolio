@@ -9,7 +9,16 @@ import ColorField from "@/components/admin/fields/ColorField.jsx";
 import ToggleField from "@/components/admin/fields/ToggleField.jsx";
 import ImageField from "@/components/admin/fields/ImageField.jsx";
 import ArrayField from "@/components/admin/fields/ArrayField.jsx";
+import ObjectEntriesField from "@/components/admin/fields/ObjectEntriesField.jsx";
 import JsonField from "@/components/admin/fields/JsonField.jsx";
+import { sectionByKey } from "@/components/admin/section-descriptors.js";
+
+// Build a fresh item from a descriptor's newItem/newEntry, which may be a
+// factory function or a plain template object.
+function makeNew(spec) {
+  if (typeof spec === "function") return spec();
+  return structuredClone(spec ?? {});
+}
 
 const SCALARS = {
   text: TextField,
@@ -39,14 +48,51 @@ function Control({ field, value, onChange }) {
       />
     );
   }
+  if (field.type === "imageArray") {
+    return (
+      <ArrayField
+        label={field.label}
+        items={value || []}
+        newItem={() => ""}
+        onChange={onChange}
+        render={(item, i, update) => (
+          <ImageField label={`Image ${i + 1}`} value={item} onChange={update} />
+        )}
+      />
+    );
+  }
   if (field.type === "array") {
     return (
       <ArrayField
         label={field.label}
         items={value || []}
-        newItem={field.newItem || (() => ({}))}
+        newItem={() => makeNew(field.newItem)}
+        addLabel={field.addLabel || "Add"}
         onChange={onChange}
         render={(item, i, update) => (
+          <div className="flex flex-col gap-3">
+            {field.itemFields.map((sub) => (
+              <Control
+                key={sub.key}
+                field={{ ...sub, label: sub.label }}
+                value={item?.[sub.key]}
+                onChange={(v) => update({ ...item, [sub.key]: v })}
+              />
+            ))}
+          </div>
+        )}
+      />
+    );
+  }
+  if (field.type === "objectEntries") {
+    return (
+      <ObjectEntriesField
+        label={field.label}
+        value={value || {}}
+        onChange={onChange}
+        newEntry={() => makeNew(field.newEntry)}
+        addLabel={field.addLabel || "Add"}
+        renderEntry={(item, update) => (
           <div className="flex flex-col gap-3">
             {field.itemFields.map((sub) => (
               <Control
@@ -64,7 +110,10 @@ function Control({ field, value, onChange }) {
   return null;
 }
 
-export default function SectionEditor({ descriptor }) {
+export default function SectionEditor({ descriptor, sectionKey }) {
+  // Resolve the descriptor on the client so the server page only passes a
+  // string key across the RSC boundary (descriptors contain functions).
+  const desc = descriptor || sectionByKey(sectionKey);
   const [config, setConfig] = useState(null);
   const { saving, save } = useSave();
 
@@ -85,7 +134,7 @@ export default function SectionEditor({ descriptor }) {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-semibold text-white">{descriptor.label}</h2>
+        <h2 className="text-xl font-semibold text-white">{desc.label}</h2>
         <button
           type="button"
           disabled={saving}
@@ -96,7 +145,7 @@ export default function SectionEditor({ descriptor }) {
         </button>
       </div>
       <div className="flex flex-col gap-5">
-        {descriptor.fields.map((field) => (
+        {desc.fields.map((field) => (
           <Control
             key={field.path.join(".")}
             field={field}

@@ -6,11 +6,12 @@ import { sectionByKey } from "@/components/admin/section-descriptors.js";
 
 export default async function AdminSectionPage({ params }) {
   const { section } = await params;
-  const descriptor = sectionByKey(section);
-  if (!descriptor) notFound();
+  // Validate here, but pass only the string key across the RSC boundary —
+  // the descriptor contains functions that can't be serialized.
+  if (!sectionByKey(section)) notFound();
   return (
     <AdminShell>
-      <SectionEditor descriptor={descriptor} />
+      <SectionEditor sectionKey={section} />
     </AdminShell>
   );
 }
