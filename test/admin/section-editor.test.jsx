@@ -23,7 +23,7 @@ describe("SectionEditor", () => {
     const input = await screen.findByLabelText("Title");
     expect(input.value).toBe("Hi");
     fireEvent.change(input, { target: { value: "Yo" } });
-    fireEvent.click(screen.getByText("Save"));
+    fireEvent.click(screen.getByText("Save changes"));
     await waitFor(() =>
       expect(global.fetch).toHaveBeenCalledWith(
         "/api/admin/config",

@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import SectionEditor from "@/components/admin/SectionEditor.jsx";
 
 beforeEach(() => {
@@ -22,17 +22,15 @@ beforeEach(() => {
 });
 
 describe("Project Detail Pages editor", () => {
-  it("renders nested forms (not JSON) for each page", async () => {
+  it("shows a card per page and opens a form modal to edit (no JSON)", async () => {
     render(<SectionEditor sectionKey="project-pages" />);
-    await waitFor(() => expect(screen.getByText("Project Detail Pages")).toBeInTheDocument());
-    // page key + title both rendered as form inputs, not raw JSON
-    expect(screen.getAllByDisplayValue("HologramLib").length).toBeGreaterThanOrEqual(2);
-    // nested content block text present
+    await waitFor(() => expect(screen.getAllByText("HologramLib").length).toBeGreaterThanOrEqual(1));
+    expect(screen.getByRole("button", { name: /add project page/i })).toBeInTheDocument();
+    // open the edit modal -> real form fields appear
+    fireEvent.click(screen.getByRole("button", { name: /edit/i }));
+    await waitFor(() => expect(screen.getByDisplayValue("/projects/hologramlib")).toBeInTheDocument());
+    // nested content block text is an editable field inside the modal
     expect(screen.getByDisplayValue("hi")).toBeInTheDocument();
-    // nested statistic value present
     expect(screen.getByDisplayValue("4k")).toBeInTheDocument();
-    // "Add project page" and "Add block" buttons exist (proper add/delete UI)
-    expect(screen.getByText("Add project page")).toBeInTheDocument();
-    expect(screen.getByText("Add block")).toBeInTheDocument();
   });
 });

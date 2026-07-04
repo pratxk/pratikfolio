@@ -15,9 +15,12 @@ beforeEach(() => {
 });
 
 describe("Project Cards editor", () => {
-  it("resolves descriptor from sectionKey and renders without crashing", async () => {
+  it("renders cards (not raw inputs) without crashing", async () => {
     render(<SectionEditor sectionKey="projects" />);
-    await waitFor(() => expect(screen.getByText("Project Cards")).toBeInTheDocument());
-    expect(screen.getByDisplayValue("RedWing")).toBeInTheDocument();
+    await waitFor(() => expect(screen.getByText("RedWing")).toBeInTheDocument());
+    expect(screen.getByText("ODM")).toBeInTheDocument();
+    // add + per-card edit controls exist
+    expect(screen.getByRole("button", { name: /add/i })).toBeInTheDocument();
+    expect(screen.getAllByRole("button", { name: /edit/i }).length).toBe(2);
   });
 });

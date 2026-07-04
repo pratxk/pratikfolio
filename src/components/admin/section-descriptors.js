@@ -55,6 +55,7 @@ export const SECTIONS = [
         path: ["pages", "home", "experience", "list"],
         type: "array",
         label: "Experience",
+        preview: { title: "title", subtitle: "company" },
         newItem: () => ({ title: "", company: "", date: "", description: "", side: "left" }),
         itemFields: [
           { key: "title", type: "text", label: "Role title" },
@@ -77,6 +78,7 @@ export const SECTIONS = [
         path: ["cards"],
         type: "array",
         label: "Cards",
+        preview: { title: "title", subtitle: "description", image: "imageSRC" },
         newItem: () => ({ title: "", description: "", imageSRC: "", buttonText: "", buttonURL: "", badges: [] }),
         itemFields: [
           { key: "title", type: "text", label: "Title" },
@@ -97,6 +99,7 @@ export const SECTIONS = [
         path: ["pages", "custom"],
         type: "objectEntries",
         label: "Pages",
+        preview: { subtitle: "title" },
         addLabel: "Add project page",
         newEntry: () => ({
           enabled: true,
@@ -171,6 +174,7 @@ export const SECTIONS = [
         path: ["pages", "contact", "social_links"],
         type: "array",
         label: "Social links",
+        preview: { title: "name", subtitle: "url" },
         newItem: () => ({ name: "", url: "", icon: "" }),
         itemFields: [
           { key: "name", type: "text", label: "Name" },
@@ -192,6 +196,7 @@ export const SECTIONS = [
         path: ["pages", "Connect With Me", "items"],
         type: "array",
         label: "Links",
+        preview: { title: "name", subtitle: "route" },
         newItem: () => ({ name: "", route: "" }),
         itemFields: [
           { key: "name", type: "text", label: "Name" },
@@ -209,6 +214,7 @@ export const SECTIONS = [
         path: ["footer", "links"],
         type: "array",
         label: "Footer links",
+        preview: { title: "label", subtitle: "url" },
         newItem: () => ({ label: "", url: "" }),
         itemFields: [
           { key: "label", type: "text", label: "Label" },
@@ -227,6 +233,7 @@ export const SECTIONS = [
         path: ["pages", "privacy", "content", "sections"],
         type: "array",
         label: "Sections",
+        preview: { title: "title", subtitle: "description" },
         newItem: () => ({ title: "", description: "", details: [] }),
         itemFields: [
           { key: "title", type: "text", label: "Title" },
