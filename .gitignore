@@ -41,3 +41,4 @@ next-env.d.ts
 
 # keep the documented example (no secrets) tracked
 !.env.example
+.playwright-mcp
