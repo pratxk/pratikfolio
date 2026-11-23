@@ -1,583 +1,585 @@
 {
-   "siteMetadata":{
-      "title":"Pratik's Portfolio",
-      "description":"Hi, my name is Pratik! This is my personal page where you can find out more about who I am, what I do, and the projects I'm working on.",
-      "embeds":{
-         "color":"#ce6419",
-         "twitter_card":"summary_large_image",
-         "image":"/images/embed.gif"
-      }
-   },
-   "global":{
-      "font":"geist",
-      "home_route":"/home",
-      "background_image": "/images/background.webp",
-      "background_image_secondary": "/images/background-small.webp",
-      "gradient": "#5bbec1:#3f5a70",
-      "colors": {
-         "color-1": "#3f5a70",
-         "color-2": "#35959c",
-         "color-3": "#8dd2d0",
-         "color-4": "#c3da94",
-         "color-5": "#F4C6A4",
-         "muted": "240 3.7% 15.9%",
-         "muted-foreground": "240 5% 64.9%",
-         "accent": "240 3.7% 15.9%",
-         "accent-foreground": "0 0% 98%",
-         "destructive": "0 62.8% 50.6%",
-         "destructive-foreground": "210 20% 98%" 
+  "siteMetadata": {
+    "title": "Pratik's Portfolio",
+    "description": "Hi, my name is Pratik! This is my personal page where you can find out more about who I am, what I do, and the projects I'm working on.",
+    "embeds": {
+      "color": "#ce6419",
+      "twitter_card": "summary_large_image",
+      "image": "/images/embed.gif"
+    }
+  },
+  "global": {
+    "font": "geist",
+    "home_route": "/home",
+    "background_image": "/images/background.webp",
+    "background_image_secondary": "/images/background-small.webp",
+    "gradient": "#5bbec1:#3f5a70",
+    "colors": {
+      "color-1": "#3f5a70",
+      "color-2": "#35959c",
+      "color-3": "#8dd2d0",
+      "color-4": "#c3da94",
+      "color-5": "#F4C6A4",
+      "muted": "240 3.7% 15.9%",
+      "muted-foreground": "240 5% 64.9%",
+      "accent": "240 3.7% 15.9%",
+      "accent-foreground": "0 0% 98%",
+      "destructive": "0 62.8% 50.6%",
+      "destructive-foreground": "210 20% 98%"
+    },
+    "custom_cursor": {
+      "enabled": false,
+      "sparkles": true,
+      "transitions": true,
+      "move_speed": 0.05
+    }
+  },
+  "resume_button": {
+    "enabled": true,
+    "label": "Download Resume",
+    "file": "/files/Pratik_Singh_Resume.pdf",
+    "route": "https://drive.google.com/file/d/1yrzU_5YBf3VUaF5Xdc8bn4eRoaRD9E3z/view?usp=sharing",
+    "style": "secondary"
+  },
+  "footer": {
+    "text": "© 2025 Pratik - All rights reserved.",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/pratxk"
       },
-      "custom_cursor":{
-         "enabled":false,
-         "sparkles":true,
-         "transitions":true,
-         "move_speed":0.05
+      {
+        "label": "Contact",
+        "url": "/contact"
       }
-   },
-   "resume_button": {
-      "enabled": true,
-      "label": "Download Resume",
-      "file": "/files/Pratik_Singh_Resume.pdf",
-      "route":"https://drive.google.com/file/d/1yrzU_5YBf3VUaF5Xdc8bn4eRoaRD9E3z/view?usp=sharing",
-      "style": "secondary"
-   },
-   "footer":{
-      "text":"© 2025 Pratik - All rights reserved.",
-      "links":[
-         {
-            "label":"GitHub",
-            "url":"https://github.com/pratxk"
-         },
-         {
-            "label":"Contact",
-            "url":"/contact"
-         }
-      ]
-   },
-   "pages":{
-      "custom":{
-         "HologramLib":{
-            "enabled":true,
-            "route":"/projects/hologramlib",
-            "navbar":false,
-            "title":"HologramLib",
-            "meta_title": "HologramLib",
-            "meta_description": "Minecraft hologram library with text, item & block displays, leaderboards, and extensive customization. packet-based, modern & easy to use", 
-            "description":"A powerful **<gradient>packet-based</gradient>** text display hologram library for Minecraft servers with MiniMessage support, emoji rendering, and extensive customization options.",
-            "images":[
-               "/images/projects/pages/hologramlib/1.png",
-               "/images/projects/pages/hologramlib/2.png",
-               "/images/projects/pages/hologramlib/3.png"
-            ],
-            "content":[
-                  {
-                     "type":"text",
-                     "content":"**HologramLib** is a display entity-based hologram library for modern Minecraft servers (**1.19.4** to **1.21.5**).<br>It allows developers to create dynamic, customizable holograms using packets, with support for MiniMessage formatting, animations, and per-player visibility.<br><br>It works with Paper, Purpur, Spigot, and Folia servers, and requires PacketEvents as a dependency.<br>It __does not__ support **Bedrock** or older Minecraft versions (~~1.8 to 1.19.3~~).<br><br><white>**The library supports multiple hologram types:**</white><br> · Text with styling, scaling, background colors<br> · Blocks and Items displayed as holograms<br> · Leaderboards with live updates<br><br><white>**Advanced features include:**</white><br> · Animation support<br> · Entity attachment (e.g. hologram on a mob)<br> · View distance control<br> · Per-player visibility and interactivity (planned)<br><br>Integration is simple with a [JitPack](https://jitpack.io/#HologramLib/HologramLib) dependency and a few lines of code. Full usage examples are provided in the [Wiki](https://github.com/maximjsx/HologramLib/wiki)"
-                  },
-                  {
-                     "type":"features",
-                     "title":"Key Features",
-                     "items":[
-                        "Packet-based",
-                        "MiniMessage support",
-                        "Custom emoji and Unicode character support",
-                        "Multi-line",
-                        "Per-player visibility",
-                        "Easy to use API",
-                        "Animations",
-                        "Text, blocks, items, and leaderboards",
-                        "Entity attachment"
-                     ]
-                  },
-                  {
-                     "type":"text",
-                     "content":"<white>**__Contributors__</white>**<br>[maximjsx](https://github.com/maximjsx), [misieur](https://github.com/misieur), [WhyZerVellasskx](https://github.com/WhyZerVellasskx), [RootException](https://github.com/RootException) &  [matt11matthew](https://github.com/matt11matthew)"
-                  }
-               ],
-               "tags":[
-                  "Spigot",
-                  "Paper",
-                  "Purpur",
-                  "Folia",
-                  "Library",
-                  "Holograms",
-                  "MiniMessage",
-                  "Animations",
-                  "Leaderboards"
-               ],
-               "statistics":{
-                  "downloads": {
-                     "title": "Downloads",
-                     "description": "Total downloads across all platforms",
-                     "value":"4.000",
-                     "color": "blue"
-                  },
-                  "servers": {
-                     "title": "Servers Using",
-                     "description": "Servers currently running this plugin",
-                     "value":"70+",
-                     "color": "green"
-                  }
-               },
-               "buttons": [
-                  {
-                     "label": "Download",
-                     "route": "https://github.com/HologramLib/HologramLib/releases/download/1.7.4/HologramLib-1.7.4.jar",
-                     "style": "primary"
-                   },
-                  {
-                    "label": "View on GitHub",
-                    "route": "https://github.com/maximjsx/HologramLib",
-                    "style": "secondary"
-                  },
-                  {
-                    "label": "Wiki",
-                    "route": "https://github.com/HologramLib/HologramLib/wiki",
-                    "style": "secondary"
-                  }
+    ]
+  },
+  "pages": {
+    "custom": {
+      "HologramLib": {
+        "enabled": true,
+        "route": "/projects/hologramlib",
+        "navbar": false,
+        "title": "HologramLib",
+        "meta_title": "HologramLib",
+        "meta_description": "Minecraft hologram library with text, item & block displays, leaderboards, and extensive customization. packet-based, modern & easy to use",
+        "description": "A powerful **<gradient>packet-based</gradient>** text display hologram library for Minecraft servers with MiniMessage support, emoji rendering, and extensive customization options.",
+        "images": [
+          "/images/projects/pages/hologramlib/1.png",
+          "/images/projects/pages/hologramlib/2.png",
+          "/images/projects/pages/hologramlib/3.png"
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "**HologramLib** is a display entity-based hologram library for modern Minecraft servers (**1.19.4** to **1.21.5**).<br>It allows developers to create dynamic, customizable holograms using packets, with support for MiniMessage formatting, animations, and per-player visibility.<br><br>It works with Paper, Purpur, Spigot, and Folia servers, and requires PacketEvents as a dependency.<br>It __does not__ support **Bedrock** or older Minecraft versions (~~1.8 to 1.19.3~~).<br><br><white>**The library supports multiple hologram types:**</white><br> · Text with styling, scaling, background colors<br> · Blocks and Items displayed as holograms<br> · Leaderboards with live updates<br><br><white>**Advanced features include:**</white><br> · Animation support<br> · Entity attachment (e.g. hologram on a mob)<br> · View distance control<br> · Per-player visibility and interactivity (planned)<br><br>Integration is simple with a [JitPack](https://jitpack.io/#HologramLib/HologramLib) dependency and a few lines of code. Full usage examples are provided in the [Wiki](https://github.com/maximjsx/HologramLib/wiki)"
+          },
+          {
+            "type": "features",
+            "title": "Key Features",
+            "items": [
+              "Packet-based",
+              "MiniMessage support",
+              "Custom emoji and Unicode character support",
+              "Multi-line",
+              "Per-player visibility",
+              "Easy to use API",
+              "Animations",
+              "Text, blocks, items, and leaderboards",
+              "Entity attachment"
+            ]
+          },
+          {
+            "type": "text",
+            "content": "<white>**__Contributors__</white>**<br>[maximjsx](https://github.com/maximjsx), [misieur](https://github.com/misieur), [WhyZerVellasskx](https://github.com/WhyZerVellasskx), [RootException](https://github.com/RootException) &  [matt11matthew](https://github.com/matt11matthew)"
+          }
+        ],
+        "tags": [
+          "Spigot",
+          "Paper",
+          "Purpur",
+          "Folia",
+          "Library",
+          "Holograms",
+          "MiniMessage",
+          "Animations",
+          "Leaderboards"
+        ],
+        "statistics": {
+          "downloads": {
+            "title": "Downloads",
+            "description": "Total downloads across all platforms",
+            "value": "4.000",
+            "color": "blue"
+          },
+          "servers": {
+            "title": "Servers Using",
+            "description": "Servers currently running this plugin",
+            "value": "70+",
+            "color": "green"
+          }
+        },
+        "buttons": [
+          {
+            "label": "Download",
+            "route": "https://github.com/HologramLib/HologramLib/releases/download/1.7.4/HologramLib-1.7.4.jar",
+            "style": "primary"
+          },
+          {
+            "label": "View on GitHub",
+            "route": "https://github.com/maximjsx/HologramLib",
+            "style": "secondary"
+          },
+          {
+            "label": "Wiki",
+            "route": "https://github.com/HologramLib/HologramLib/wiki",
+            "style": "secondary"
+          }
+        ]
+      },
+      "NextFight": {
+        "enabled": true,
+        "route": "/projects/nextfight",
+        "navbar": false,
+        "meta_title": "NextFight",
+        "meta_description": "Minecraft Minigames & Battle Royale",
+        "title": "NextFight",
+        "description": "Your <gradient>**#1**</gradient> Server For <gradient:#fcad03:#ffeb85>**Battle Royale**</gradient> since 2022",
+        "images": [
+          "/images/projects/pages/nextfight/1.png",
+          "/images/projects/pages/nextfight/2.png",
+          "/images/projects/pages/nextfight/3.png",
+          "/images/projects/pages/nextfight/4.png",
+          "/images/projects/pages/nextfight/5.png",
+          "/images/projects/pages/nextfight/6.png"
+        ],
+        "content": [
+          {
+            "type": "features",
+            "title": "Server Highlights",
+            "items": [
+              "Custom plugin infrastructure built from scratch",
+              "Professional content creator partnerships",
+              "Custom resource packs and textures"
+            ]
+          },
+          {
+            "type": "text",
+            "content": "**Notable Collaborations:** The server attracted attention from major Minecraft content creators including [Copeat](https://www.twitch.tv/copeat), [Brostastic](https://www.youtube.com/@BrostasticTV), and [SimplyFuse](https://www.twitch.tv/simplyfuse). We also had the honor of hosting special guests such as [GommeHD](https://www.youtube.com/user/GommeHD), [Wichtiger](https://www.youtube.com/wichtiger), [Fuxelbau](https://www.twitch.tv/fuxelbau), and even a Mojang employee, showcasing the server's reputation in the community."
+          },
+          {
+            "type": "posts",
+            "posts": [
+              {
+                "title": "The end?",
+                "excerpt": "For now, further development of the network has been paused",
+                "date": "2025-06-28",
+                "tags": [
+                  "NextFight"
                 ]
-         },
-         "NextFight":{
-            "enabled":true,
-            "route":"/projects/nextfight",
-            "navbar":false,
-            "meta_title": "NextFight",
-            "meta_description": "Minecraft Minigames & Battle Royale", 
-            "title":"NextFight",
-            "description":"Your <gradient>**#1**</gradient> Server For <gradient:#fcad03:#ffeb85>**Battle Royale**</gradient> since 2022",
-            "images":[
-               "/images/projects/pages/nextfight/1.png",
-               "/images/projects/pages/nextfight/2.png",
-               "/images/projects/pages/nextfight/3.png",
-               "/images/projects/pages/nextfight/4.png",
-               "/images/projects/pages/nextfight/5.png",
-               "/images/projects/pages/nextfight/6.png"
-            ],
-            "content":[
-               {
-                  "type":"features",
-                  "title":"Server Highlights",
-                  "items":[
-                     "Custom plugin infrastructure built from scratch",
-                     "Professional content creator partnerships",
-                     "Custom resource packs and textures"
-                  ]
-               },
-               {
-                  "type":"text",
-                  "content":"**Notable Collaborations:** The server attracted attention from major Minecraft content creators including [Copeat](https://www.twitch.tv/copeat), [Brostastic](https://www.youtube.com/@BrostasticTV), and [SimplyFuse](https://www.twitch.tv/simplyfuse). We also had the honor of hosting special guests such as [GommeHD](https://www.youtube.com/user/GommeHD), [Wichtiger](https://www.youtube.com/wichtiger), [Fuxelbau](https://www.twitch.tv/fuxelbau), and even a Mojang employee, showcasing the server's reputation in the community."
-               },
-               {
-                  "type": "posts",
-                  "posts": [
-                     {
-                        "title": "The end?",
-                        "excerpt": "For now, further development of the network has been paused",
-                        "date": "2025-06-28",
-                        "tags": ["NextFight"]
-                     }
-                  ]
-               },
-               {
-                  "type":"text",
-                  "content":"**Legacy:** While NextFight Network concluded operations in 2024, it remains a testament to innovative Minecraft server development and successful community management. The technical solutions and creative approaches developed for NextFight continue to influence my current projects."
-               }
-            ],
-            "statistics":{
-               "registered": {
-                  "title": "Registered Players",
-                  "description": "Total amount of unique players who joined nextfight.net",
-                  "value":"2k+",
-                  "color": "orange"
-               },
-               "peak": {
-                  "title": "Most",
-                  "description": "Highest recorded concurrent players count",
-                  "value":"60",
-                  "color": "green"
-               },
-               "discord": {
-                  "title": "Discord Members",
-                  "description": "Current amount of Discord members",
-                  "value":"~800",
-                  "color": "purple"
-               }
-            },
-            "tags":[
-               "Elytra Race",
-               "Battle Royale",
-               "FFA",
-               "Cookie Clicker",
-               "Copeat Prime"
-            ],
-            "buttons": [
-               {
-                  "label": "Join the Discord server",
-                  "route": "https://discord.gg/sB4nh3eHGB",
-                  "style": "primary"
-                }
-             ]
-         }
-      },
-      "home":{
-         "enabled":true,
-         "route":"/home",
-         "name": "Home",
-         "profile_image":"/images/ProfilePic.jpeg",
-         "about_me":"<gradient>Hi, I'm Pratik!</gradient>",
-         "description":"A Result-Oriented Web Developer building and managing Websites and Web Applications that leads to the success of the overall product.",
-         "tools_languages_title":"Tools & Languages",
-         "languages":[
-            "JavaScript",
-            "TypeScript",
-            "SQL",
-            "Python"
-         ],
-         "tools":[
-            "Next.js", "React.js", "Remix.js", "Tailwind CSS", "ShadCN", "Bootstrap", "PostgreSQL", "MongoDB", "Git", "GitHub", "Postman", "Docker (basic)", "Redis", "KeystoneJS", "Jest", "Cypress", "GitHub Actions"
-         ],
-         "action_buttons":[
-            {
-               "label":"My Projects",
-               "route":"/projects",
-               "style":"primary"
-            },
-            {
-               "label":"Resume",
-               "action":true,
-               "file":"/files/Pratik_Singh_Resume.pdf",
-               "route":"https://drive.google.com/file/d/1yrzU_5YBf3VUaF5Xdc8bn4eRoaRD9E3z/view?usp=sharing",
-               "style":"secondary"
-            }
-         ],
-         "experience":{
-            "enabled":true,
-            "title":"My Experience",
-            "list":[
-               {
-                  "title":"Associate Software Engineer",
-                  "company":"CIMET",
-                  "date":"Sept 2024 – Jul 2025",
-                  "description":"Built high-performance, server-rendered interfaces using Next.js, TypeScript, and Styled Components, reducing load times by 40% and improving SEO across multiple verticals. Integrated GraphQL and REST APIs for efficient SSR data flows, cutting latency by 30%. Boosted backend performance by 65% using Redis caching and Prisma-PostgreSQL optimizations. Improved code quality and CI reliability by refactoring a monorepo and resolving 200+ SonarQube issues. Enabled flexible content publishing by extending KeystoneJS CMS with modular, SEO-ready schemas. Collaborated with cross-functional teams to deliver scalable, maintainable, and accessible UI/UX solutions.",  
-                  "side":"right"
-               },
-               {
-                  "title":"Full Stack Developer Trainee",
-                  "company":"[MASAI](https://www.masaischool.com/)",
-                  "date":"Jan 2024 - Aug 2024",
-                  "description":"Developed and maintained production-grade web applications using the MERN stack and TypeScript, following modular architecture and test-driven development. Built secure RESTful APIs with JWT authentication and role-based access control. Engineered responsive, accessible UIs in React, achieving consistently high Lighthouse scores (90+). Integrated Jest and Cypress test suites, reducing QA cycles by 35% and improving release stability.",
-                  "side":"left"
-               },
-               {
-                  "title":"Web Developer",
-                  "company":"[Codelancer CyberSecurity](https://codelancer.in/)",
-                  "date":"Aug 2023 - Dec 2023",
-                  "description":"Worked on various real-time projects related to website development and web application maintenance. Built a fully functional dashboard for managing finances and health insurance claims for Medcash Corporation. Developed a comprehensive Event Management System for hosting and managing onsite and virtual events. Performed Security Audits on various websites and firms and identified vulnerabilities.",
-                  "side":"right"
-               }
+              }
             ]
-         },
-         "aboutMe":{
-            "enabled":true,
-            "title":"About Me",
-            "content":"I’m a Software Engineer with 1.5 years of hands-on experience designing, architecting, and deploying scalable, high-performance web applications. I specialize in building seamless user experiences using modern JavaScript frameworks like React.js and Next.js, and crafting robust backend solutions with Node.js, GraphQL, and Express. My backend expertise includes working with relational and NoSQL databases such as PostgreSQL and MongoDB, using tools like Prisma ORM to manage data efficiently. I’m proficient in TypeScript, Python, and SQL, and well-versed in RESTful and GraphQL API architectures. In addition to development, I’m experienced in setting up CI/CD workflows, writing automated tests with Jest and Cypress, and ensuring applications are production-ready through performance tuning, Lighthouse optimization, and secure deployment practices. I thrive in Agile environments, enjoy collaborating with cross-functional teams, and have a proven track record of improving code quality, accelerating feature delivery, and solving real-world user problems. I’m passionate about clean code, scalable architecture, and always learning the next best tool or technology."
-         },
-         "github_stats":{
-            "enabled":true,
-            "title":"GitHub Stats",
-            "username":"pratxk"
-         }
-      },
-      "projects":{
-         "enabled":true,
-         "name": "Projects",
-         "header":"My projects",
-         "route":"/projects"
-      },
-      "contact":{
-         "enabled":true,
-         "name": "Contact",
-         "header":"Socials",
-         "route":"/contact",
-         "email":"proff.pratiksingh@gmail.com",
-         "direct_contact":"Reach Me Directly",
-         "legal":{
-            "enabled":true,
-            "name":"Pratik Singh",
-            "address":"Nagpur, Maharashtra, India",
-            "email":"proff.pratiksingh@gmail.com",
-            "phone":"+91 9356901030"
-         },
-         "social_links":[
-            {
-               "name":"GitHub",
-               "url":"https://github.com/pratxk",
-               "icon":"github"
-            },
-            {
-               "name":"LinkedIn",
-               "url":"https://linkedin.com/in/pratik-singh-0654b9214",
-               "icon":"linkedin"
-            },
-            {
-               "name":"Twitter",
-               "url":"https://www.x.com/Pratxk007",
-               "icon":"twitter"
-            },
-            {
-               "name":"Instagram",
-               "url":"https://www.instagram.com/kakashiix26",
-               "icon":"instagram"
-            }
-         ],
-         "contact_form":{
-            "enabled":true,
-            "send_button":"Send Message",
-            "success_message":"Message sent successfully!",
-            "failure_message":"Failed to send message. Please try again.",
-            "error_message":"An error occurred. Please try again.",
-            "fields":[
-               {
-                  "name":"name",
-                  "label":"Your Name",
-                  "type":"text",
-                  "required":true
-               },
-               {
-                  "name":"email",
-                  "label":"Your Email",
-                  "type":"email",
-                  "required":true
-               },
-               {
-                  "name":"message",
-                  "label":"Your Message",
-                  "type":"textarea",
-                  "required":true
-               }
-            ]
-         }
-      },
-      "Connect With Me":{
-         "enabled":true,
-         "dropdown":true,
-         "items":[
-            {
-               "name":"LinkedIn",
-               "route":"https://linkedin.com/in/pratik-singh-0654b9214"
-            },
-            {
-               "name":"Github",
-               "route":"https://github.com/pratxk"
-            },
-            {
-               "name":"Twitter",
-               "route":"https://x.com/Pratxk007"
-            },
-            {
-               "name":"Peerlist",
-               "route":"https://peerlist.io/pratxk007"
-            }
-         ]
-      },
-      "privacy":{
-         "enabled":false,
-         "header":"Privacy Policy",
-         "route":"/privacy",
-         "content":{
-            "contact_title":"Contact",
-            "contact":"legal@maxim.cat",
-            "introduction":"This portfolio website is designed with minimal data collection and maximum user privacy in mind.",
-            "sections":[
-               {
-                  "title":"Information Collection",
-                  "description":"We collect the following types of information:",
-                  "details":[
-                     "Name, email, and message content submitted through the contact form",
-                     "IP address for rate limiting and security purposes",
-                     "Potential tracking of client-side interactions for website functionality"
-                  ]
-               },
-               {
-                  "title":"Data Processing and Storage",
-                  "description":"Data collection and processing details:",
-                  "details":[
-                     "Contact form submissions are processed in-memory and not permanently stored",
-                     "IP addresses are temporarily tracked for rate limiting (maximum 30 minutes)",
-                     "No persistent user data is saved or stored long-term"
-                  ]
-               },
-               {
-                  "title":"Third-Party Services",
-                  "description":"Potential data collection by third-party services:",
-                  "details":[
-                     "Image hosting services (e.g., shields.io) may collect IP address during image requests",
-                     "Standard browser and server logs may capture additional metadata"
-                  ]
-               },
-               {
-                  "title":"Data Protection",
-                  "description":"We implement the following protection measures:",
-                  "details":[
-                     "Rate limiting to prevent abuse of contact form",
-                     "Validation of submitted form data",
-                     "No storage of sensitive personal information"
-                  ]
-               },
-               {
-                  "title":"User Rights",
-                  "description":"Users have the right to:",
-                  "details":[
-                     "Request information about data collection",
-                     "Request deletion of any potential stored information",
-                     "Opt-out of non-essential data collection"
-                  ]
-               }
-            ]
-         }
+          },
+          {
+            "type": "text",
+            "content": "**Legacy:** While NextFight Network concluded operations in 2024, it remains a testament to innovative Minecraft server development and successful community management. The technical solutions and creative approaches developed for NextFight continue to influence my current projects."
+          }
+        ],
+        "statistics": {
+          "registered": {
+            "title": "Registered Players",
+            "description": "Total amount of unique players who joined nextfight.net",
+            "value": "2k+",
+            "color": "orange"
+          },
+          "peak": {
+            "title": "Most",
+            "description": "Highest recorded concurrent players count",
+            "value": "60",
+            "color": "green"
+          },
+          "discord": {
+            "title": "Discord Members",
+            "description": "Current amount of Discord members",
+            "value": "~800",
+            "color": "purple"
+          }
+        },
+        "tags": [
+          "Elytra Race",
+          "Battle Royale",
+          "FFA",
+          "Cookie Clicker",
+          "Copeat Prime"
+        ],
+        "buttons": [
+          {
+            "label": "Join the Discord server",
+            "route": "https://discord.gg/sB4nh3eHGB",
+            "style": "primary"
+          }
+        ]
       }
-   },
-   "card":{
-      "pop_in":true,
-      "hover_effect":true,
-      "hover_glow":true,
-      "image_shine":true
-   },
-   "cards":[
-      {
-         "title":"RedWing",
-         "description":"A full-stack drone management system built with Next.js, Node.js, Apollo GraphQL and Redis for real-time data handling and robust backend.",
-         "imageSRC":"/images/projects/redwing.png",
-         "buttonText":"View on Vercel",
-         "buttonURL":"https://redwinghq.vercel.app/",
-         "badges":[
-            
-         ]
+    },
+    "home": {
+      "enabled": true,
+      "route": "/home",
+      "name": "Home",
+      "profile_image": "/images/ProfilePic.jpeg",
+      "about_me": "<gradient>Hi, I'm Pratik!</gradient>",
+      "description": "A Result-Oriented Web Developer building and managing Websites and Web Applications that leads to the success of the overall product.",
+      "tools_languages_title": "Tools & Languages",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "SQL",
+        "Python"
+      ],
+      "tools": [
+        "Next.js",
+        "React.js",
+        "Remix.js",
+        "Tailwind CSS",
+        "ShadCN",
+        "Bootstrap",
+        "PostgreSQL",
+        "MongoDB",
+        "Git",
+        "GitHub",
+        "Postman",
+        "Docker (basic)",
+        "Redis",
+        "KeystoneJS",
+        "Jest",
+        "Cypress",
+        "GitHub Actions"
+      ],
+      "action_buttons": [
+        {
+          "label": "My Projects",
+          "route": "/projects",
+          "style": "primary"
+        },
+        {
+          "label": "Resume",
+          "action": true,
+          "file": "/files/Pratik_Singh_Resume.pdf",
+          "route": "https://drive.google.com/file/d/1yrzU_5YBf3VUaF5Xdc8bn4eRoaRD9E3z/view?usp=sharing",
+          "style": "secondary"
+        }
+      ],
+      "experience": {
+        "enabled": true,
+        "title": "My Experience",
+        "list": [
+          {
+            "company": "KGEN | HumynLabs",
+            "date": "Sept 2025 - Present",
+            "title": "Software Development Engineer - 1",
+            "side": "left",
+            "description": "Own a distributed audio annotation pipeline across 7+ Go/TypeScript microservices, handling 80,000+ units across ~20 pipeline stages. • Optimized the unit-pickup query, reducing database load by replacing sequential scans with a 200-row indexed candidate window. • Designed an SQS-based multi-destination delivery pipeline (S3, GCS, Google Drive) with retries, rate limiting, and memory controls keeping pods under 80% usage. • Prototyped speaker verification using SpeechBrain and WeSpeaker embeddings to detect duplicate contributors and reduce dataset bias. • Integrated Sarvam AI and ElevenLabs ASR models, reducing manual annotation effort by ~60%. • Scaled auto-QC with 8 autoscaled Celery worker pools using WER scoring and LLM-based adjudication."
+          },
+          {
+            "title": "Associate Software Engineer",
+            "company": "CIMET",
+            "date": "Sept 2024 – Jun 2025",
+            "description": "Built high-performance, server-rendered interfaces using Next.js, TypeScript, and Styled Components, reducing load times by 40% and improving SEO across multiple verticals. Integrated GraphQL and REST APIs for efficient SSR data flows, cutting latency by 30%. Boosted backend performance by 65% using Redis caching and Prisma-PostgreSQL optimizations. Improved code quality and CI reliability by refactoring a monorepo and resolving 200+ SonarQube issues. Enabled flexible content publishing by extending KeystoneJS CMS with modular, SEO-ready schemas. Collaborated with cross-functional teams to deliver scalable, maintainable, and accessible UI/UX solutions.",
+            "side": "right"
+          },
+          {
+            "title": "Full Stack Developer Trainee",
+            "company": "[MASAI](https://www.masaischool.com/)",
+            "date": "Jan 2024 - Aug 2024",
+            "description": "Developed and maintained production-grade web applications using the MERN stack and TypeScript, following modular architecture and test-driven development. Built secure RESTful APIs with JWT authentication and role-based access control. Engineered responsive, accessible UIs in React, achieving consistently high Lighthouse scores (90+). Integrated Jest and Cypress test suites, reducing QA cycles by 35% and improving release stability.",
+            "side": "left"
+          },
+          {
+            "title": "Web Developer",
+            "company": "[Codelancer CyberSecurity](https://codelancer.in/)",
+            "date": "Aug 2023 - Dec 2023",
+            "description": "Worked on various real-time projects related to website development and web application maintenance. Built a fully functional dashboard for managing finances and health insurance claims for Medcash Corporation. Developed a comprehensive Event Management System for hosting and managing onsite and virtual events. Performed Security Audits on various websites and firms and identified vulnerabilities.",
+            "side": "right"
+          }
+        ]
       },
-      {
-         "title":"ODM Gear",
-         "description":"A full-stack order management system built with Next.js, Node.js, Restful APIs for real-time order handling and robust backend.",
-         "imageSRC":"/images/projects/odm.png",
-         "buttonText":"View on Vercel",
-         "buttonURL":"https://order-management-system-chi.vercel.app/",
-         "badges":[
-            
-         ]
+      "aboutMe": {
+        "enabled": true,
+        "title": "About Me",
+        "content": "I’m a Software Engineer with 1.5 years of hands-on experience designing, architecting, and deploying scalable, high-performance web applications. I specialize in building seamless user experiences using modern JavaScript frameworks like React.js and Next.js, and crafting robust backend solutions with Node.js, GraphQL, and Express. My backend expertise includes working with relational and NoSQL databases such as PostgreSQL and MongoDB, using tools like Prisma ORM to manage data efficiently. I’m proficient in TypeScript, Python, and SQL, and well-versed in RESTful and GraphQL API architectures. In addition to development, I’m experienced in setting up CI/CD workflows, writing automated tests with Jest and Cypress, and ensuring applications are production-ready through performance tuning, Lighthouse optimization, and secure deployment practices. I thrive in Agile environments, enjoy collaborating with cross-functional teams, and have a proven track record of improving code quality, accelerating feature delivery, and solving real-world user problems. I’m passionate about clean code, scalable architecture, and always learning the next best tool or technology."
       },
-      {
-         "title":"Categorizer HQ",
-         "description":"A Product management system built with Next.js, Tailwind CSS, ShadCN UI.",
-         "imageSRC":"/images/projects/categorizer.png",
-         "buttonText":"View on Vercel",
-         "buttonURL":"https://categorizerhq.vercel.app/",
-         "badges":[
-            
-         ]
-      },
-      {
-         "title":"Dynamic Form Builder",
-         "description":"A dynamic form builder system built with Next.js, Tailwind CSS, ShadCN UI.",
-         "imageSRC":"/images/projects/formBuilder.png",
-         "buttonText":"View on Vercel",
-         "buttonURL":"https://react-form-builder-beryl.vercel.app/",
-         "badges":[
-            
-         ]
-      },
-      {
-         "title":"AI Shorts Generator",
-         "description":"A web app that generates AI Shorts from by generating own stories and images and then converting them into videos",
-         "imageSRC":"/images/projects/aishortsapp.png",
-         "buttonText":"View on GitHub",
-         "buttonURL":"https://github.com/pratxk/Ai-Shorts-App",
-         "badges":[
-            
-         ]
-      },
-      {
-         "title":"ChatBot Flow Builder",
-         "description":"A web app that allows users to create and manage chatbots with a visual flow builder, built with React.js, Tailwind CSS, and vite.",
-         "imageSRC":"/images/projects/chatbotflow.png",
-         "buttonText":"View on GitHub Pages",
-         "buttonURL":"https://pratxk.github.io/Chatbot-FlowBuilder/",
-         "badges":[
-            
-         ]
-      },
-      {
-         "title":"Lenskart Clone",
-         "description":"A fully functional Lenskart clone with a modern UI, built with Next.js, Tailwind CSS, and Prisma.",
-         "imageSRC":"/images/projects/lenskart.png",
-         "buttonText":"View on Netlify",
-         "buttonURL":"https://extraordinary-paprenjak-f2792f.netlify.app/",
-         "badges":[
-
-         ]
-      },
-      {
-         "title":"Harris AI",
-         "description":"An advanced virtual assistant featuring a smart chatbot using Google & Wikipedia APIs, with voice command controls for managing applications & tasks.",
-         "imageSRC":"/images/projects/harris.png",
-         "buttonText":"View on Github",
-         "buttonURL":"https://github.com/pratxk/HARRIS",
-         "badges":[
-
-         ]
-      },
-      {
-         "title":"PharmEasy",
-         "description":"A full fledged e-commerce & inventory managed website for medicines and healthcare products, built with React, Tailwind CSS, and Prisma.",
-         "imageSRC":"/images/projects/pharmeasy.png",
-         "buttonText":"View on Vercel",
-         "buttonURL":"https://pharm-easyy.vercel.app/",
-         "badges":[
-         ]
-      },
-      {
-         "title":"Movix",
-         "description":"A web app that allows users to search and watch movies, TV shows, and anime with a modern UI, built with React.js, Tailwind CSS, and Prisma.",
-         "imageSRC":"/images/projects/movix.png",
-         "buttonText":"View on Vercel",
-         "buttonURL":"https://movix-app-pink-gamma.vercel.app/",
-         "badges":[
-            
-         ]
-      },
-      {
-         "title":"Dell Clone",
-         "description":"A fully functional Dell clone with a modern UI, built with Next.js, Tailwind CSS, and Prisma.",
-         "imageSRC":"/images/projects/dellClone.png",
-         "buttonText":"View on Vercel",
-         "buttonURL":"https://dell-clone-hakai.vercel.app/",
-         "badges":[
-         ]
-      },
-      {
-         "title":"SuperHero Resume",
-         "description":"A superhero-themed resume template built with React.js and Tailwind CSS, showcasing a unique design.",
-         "imageSRC":"/images/projects/luffy.png",
-         "buttonText":"View on Netlify",
-         "buttonURL":"https://cheerful-douhua-aba1b0.netlify.app/",
-         "badges":[
-         ]
-      },
-      {
-         "title":"Pokemon Dictionary",
-         "description":"A simple web app that allows users to search and view information about Pokemon, built with vanilla JavaScript, HTML, and CSS.",
-         "imageSRC":"/images/projects/Pokemon.png",
-         "buttonText":"View on GitHub Pages",
-         "buttonURL":"https://pratxk.github.io/Pokemon-Task/",
-         "badges":[
-         ]
-      },
-      {
-         "title":"Kanban App",
-         "description":"A Kanban app built with React.js, Tailwind CSS, and Prisma, allowing users to create and manage tasks in a Kanban board format.",
-         "imageSRC":"/images/projects/kanban.webp",
-         "buttonText":"View on GitHub",
-         "buttonURL":"https://github.com/pratxk/Kanban_app",
-         "badges":[
-         ]
+      "github_stats": {
+        "enabled": true,
+        "title": "GitHub Stats",
+        "username": "pratxk"
       }
-   ]
+    },
+    "projects": {
+      "enabled": true,
+      "name": "Projects",
+      "header": "My projects",
+      "route": "/projects"
+    },
+    "contact": {
+      "enabled": true,
+      "name": "Contact",
+      "header": "Socials",
+      "route": "/contact",
+      "email": "proff.pratiksingh@gmail.com",
+      "direct_contact": "Reach Me Directly",
+      "legal": {
+        "enabled": true,
+        "name": "Pratik Singh",
+        "address": "Nagpur, Maharashtra, India",
+        "email": "proff.pratiksingh@gmail.com",
+        "phone": "+91 9356901030"
+      },
+      "social_links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/pratxk",
+          "icon": "github"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://linkedin.com/in/pratik-singh-0654b9214",
+          "icon": "linkedin"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://www.x.com/Pratxk007",
+          "icon": "twitter"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/kakashiix26",
+          "icon": "instagram"
+        }
+      ],
+      "contact_form": {
+        "enabled": true,
+        "send_button": "Send Message",
+        "success_message": "Message sent successfully!",
+        "failure_message": "Failed to send message. Please try again.",
+        "error_message": "An error occurred. Please try again.",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Your Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Your Email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "message",
+            "label": "Your Message",
+            "type": "textarea",
+            "required": true
+          }
+        ]
+      }
+    },
+    "Connect With Me": {
+      "enabled": true,
+      "dropdown": true,
+      "items": [
+        {
+          "name": "LinkedIn",
+          "route": "https://linkedin.com/in/pratik-singh-0654b9214"
+        },
+        {
+          "name": "Github",
+          "route": "https://github.com/pratxk"
+        },
+        {
+          "name": "Twitter",
+          "route": "https://x.com/Pratxk007"
+        },
+        {
+          "name": "Peerlist",
+          "route": "https://peerlist.io/pratxk007"
+        }
+      ]
+    },
+    "privacy": {
+      "enabled": false,
+      "header": "Privacy Policy",
+      "route": "/privacy",
+      "content": {
+        "contact_title": "Contact",
+        "contact": "legal@maxim.cat",
+        "introduction": "This portfolio website is designed with minimal data collection and maximum user privacy in mind.",
+        "sections": [
+          {
+            "title": "Information Collection",
+            "description": "We collect the following types of information:",
+            "details": [
+              "Name, email, and message content submitted through the contact form",
+              "IP address for rate limiting and security purposes",
+              "Potential tracking of client-side interactions for website functionality"
+            ]
+          },
+          {
+            "title": "Data Processing and Storage",
+            "description": "Data collection and processing details:",
+            "details": [
+              "Contact form submissions are processed in-memory and not permanently stored",
+              "IP addresses are temporarily tracked for rate limiting (maximum 30 minutes)",
+              "No persistent user data is saved or stored long-term"
+            ]
+          },
+          {
+            "title": "Third-Party Services",
+            "description": "Potential data collection by third-party services:",
+            "details": [
+              "Image hosting services (e.g., shields.io) may collect IP address during image requests",
+              "Standard browser and server logs may capture additional metadata"
+            ]
+          },
+          {
+            "title": "Data Protection",
+            "description": "We implement the following protection measures:",
+            "details": [
+              "Rate limiting to prevent abuse of contact form",
+              "Validation of submitted form data",
+              "No storage of sensitive personal information"
+            ]
+          },
+          {
+            "title": "User Rights",
+            "description": "Users have the right to:",
+            "details": [
+              "Request information about data collection",
+              "Request deletion of any potential stored information",
+              "Opt-out of non-essential data collection"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "card": {
+    "pop_in": true,
+    "hover_effect": true,
+    "hover_glow": true,
+    "image_shine": true
+  },
+  "cards": [
+    {
+      "title": "RedWing",
+      "description": "A full-stack drone management system built with Next.js, Node.js, Apollo GraphQL and Redis for real-time data handling and robust backend.",
+      "imageSRC": "/images/projects/redwing.png",
+      "buttonText": "View on Vercel",
+      "buttonURL": "https://redwinghq.vercel.app/",
+      "badges": []
+    },
+    {
+      "title": "ODM Gear",
+      "description": "A full-stack order management system built with Next.js, Node.js, Restful APIs for real-time order handling and robust backend.",
+      "imageSRC": "/images/projects/odm.png",
+      "buttonText": "View on Vercel",
+      "buttonURL": "https://order-management-system-chi.vercel.app/",
+      "badges": []
+    },
+    {
+      "title": "Categorizer HQ",
+      "description": "A Product management system built with Next.js, Tailwind CSS, ShadCN UI.",
+      "imageSRC": "/images/projects/categorizer.png",
+      "buttonText": "View on Vercel",
+      "buttonURL": "https://categorizerhq.vercel.app/",
+      "badges": []
+    },
+    {
+      "title": "Dynamic Form Builder",
+      "description": "A dynamic form builder system built with Next.js, Tailwind CSS, ShadCN UI.",
+      "imageSRC": "/images/projects/formBuilder.png",
+      "buttonText": "View on Vercel",
+      "buttonURL": "https://react-form-builder-beryl.vercel.app/",
+      "badges": []
+    },
+    {
+      "title": "AI Shorts Generator",
+      "description": "A web app that generates AI Shorts from by generating own stories and images and then converting them into videos",
+      "imageSRC": "/images/projects/aishortsapp.png",
+      "buttonText": "View on GitHub",
+      "buttonURL": "https://github.com/pratxk/Ai-Shorts-App",
+      "badges": []
+    },
+    {
+      "title": "ChatBot Flow Builder",
+      "description": "A web app that allows users to create and manage chatbots with a visual flow builder, built with React.js, Tailwind CSS, and vite.",
+      "imageSRC": "/images/projects/chatbotflow.png",
+      "buttonText": "View on GitHub Pages",
+      "buttonURL": "https://pratxk.github.io/Chatbot-FlowBuilder/",
+      "badges": []
+    },
+    {
+      "title": "Lenskart Clone",
+      "description": "A fully functional Lenskart clone with a modern UI, built with Next.js, Tailwind CSS, and Prisma.",
+      "imageSRC": "/images/projects/lenskart.png",
+      "buttonText": "View on Netlify",
+      "buttonURL": "https://extraordinary-paprenjak-f2792f.netlify.app/",
+      "badges": []
+    },
+    {
+      "title": "Harris AI",
+      "description": "An advanced virtual assistant featuring a smart chatbot using Google & Wikipedia APIs, with voice command controls for managing applications & tasks.",
+      "imageSRC": "/images/projects/harris.png",
+      "buttonText": "View on Github",
+      "buttonURL": "https://github.com/pratxk/HARRIS",
+      "badges": []
+    },
+    {
+      "title": "PharmEasy",
+      "description": "A full fledged e-commerce & inventory managed website for medicines and healthcare products, built with React, Tailwind CSS, and Prisma.",
+      "imageSRC": "/images/projects/pharmeasy.png",
+      "buttonText": "View on Vercel",
+      "buttonURL": "https://pharm-easyy.vercel.app/",
+      "badges": []
+    },
+    {
+      "title": "Movix",
+      "description": "A web app that allows users to search and watch movies, TV shows, and anime with a modern UI, built with React.js, Tailwind CSS, and Prisma.",
+      "imageSRC": "/images/projects/movix.png",
+      "buttonText": "View on Vercel",
+      "buttonURL": "https://movix-app-pink-gamma.vercel.app/",
+      "badges": []
+    },
+    {
+      "title": "Dell Clone",
+      "description": "A fully functional Dell clone with a modern UI, built with Next.js, Tailwind CSS, and Prisma.",
+      "imageSRC": "/images/projects/dellClone.png",
+      "buttonText": "View on Vercel",
+      "buttonURL": "https://dell-clone-hakai.vercel.app/",
+      "badges": []
+    },
+    {
+      "title": "SuperHero Resume",
+      "description": "A superhero-themed resume template built with React.js and Tailwind CSS, showcasing a unique design.",
+      "imageSRC": "/images/projects/luffy.png",
+      "buttonText": "View on Netlify",
+      "buttonURL": "https://cheerful-douhua-aba1b0.netlify.app/",
+      "badges": []
+    },
+    {
+      "title": "Pokemon Dictionary",
+      "description": "A simple web app that allows users to search and view information about Pokemon, built with vanilla JavaScript, HTML, and CSS.",
+      "imageSRC": "/images/projects/Pokemon.png",
+      "buttonText": "View on GitHub Pages",
+      "buttonURL": "https://pratxk.github.io/Pokemon-Task/",
+      "badges": []
+    },
+    {
+      "title": "Kanban App",
+      "description": "A Kanban app built with React.js, Tailwind CSS, and Prisma, allowing users to create and manage tasks in a Kanban board format.",
+      "imageSRC": "/images/projects/kanban.webp",
+      "buttonText": "View on GitHub",
+      "buttonURL": "https://github.com/pratxk/Kanban_app",
+      "badges": []
+    }
+  ]
 }

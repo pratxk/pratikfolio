@@ -142,15 +142,33 @@ const TimelineItem = ({ experience, animationDelay, isInView }) => {
             >
               {parseText(experience.title, config.global.gradient)}
             </h3>
-            <p
+            <ul
               className="c-cursor-text"
               style={{
                 color: "rgb(209 213 219)",
                 lineHeight: "1.625",
+                listStyle: "disc",
+                paddingLeft: "1.25rem",
+                textAlign: "left",
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.5rem",
               }}
             >
-              {parseText(experience.description, config.global.gradient)}
-            </p>
+              {(experience.description || "")
+                .split(" • ")
+                .flatMap((part) =>
+                  part
+                    .split(/(?<=\.)\s+(?=[A-Z])/)
+                    .map((s) => s.trim()),
+                )
+                .filter(Boolean)
+                .map((point, i) => (
+                  <li key={i}>
+                    {parseText(point, config.global.gradient)}
+                  </li>
+                ))}
+            </ul>
           </div>
         </div>
       </motion.div>
